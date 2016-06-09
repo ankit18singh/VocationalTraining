@@ -18,10 +18,14 @@ UserDat u5= new UserDat(FName: "Anil", LName: "Singh" , Email: "aj.ankitsingh@gm
 
 List l= [u1,u2,u3,u4,u5]
 
-List l1=[]
-List l2=[]
+List l1= l.findAll(){
+    it.Age > 50
+}
+List l2= l.findAll(){
+    it.Age < 50
+}
 
-l.each { age ->
+/*l.each { age ->
 
     if(age.Age > 50)
     {
@@ -30,7 +34,8 @@ l.each { age ->
     else{
         l1.push(age)
     }
-}
+}*/
+
 
 println "---Users whose age is above 50---"
 l2.each {
